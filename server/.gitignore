@@ -1,0 +1,11 @@
+# Dependencies (Too big to upload)
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Security (Keep your secrets safe!)
+.env
+server/.env
+
+# Build files
+client/build/
