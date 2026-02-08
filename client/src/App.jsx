@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import './App.css';
 
-const API_BASE = 'http://localhost:5001/api';
+const API_BASE = 'https://mini-post-app-1.onrender.com/api';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -205,7 +205,7 @@ function App() {
       {/* --- BOTTOM NAV --- */}
       <div className="bottom-nav">
         <div className={`nav-item ${activeTab === 'home' ? 'active' : ''}`} onClick={() => setActiveTab('home')}>🏠</div>
-        <div className={`nav-item ${activeTab === 'search' ? 'active' : ''}`} onClick={() => setActiveTab('search')}>🔍</div>
+        <div className={`nav-item ${activeTab === 'search' ? 'active' : ''} ` } onClick={() => setActiveTab('search')}>🔍</div>
         <div className="nav-item">🏆</div>
         <div className="nav-item">👤</div>
       </div>
